@@ -1,0 +1,30 @@
+.CDC002 {
+  @import "./changes/checkout-overlay/include-vat-checkout-overlay";
+
+  #results {
+    @import "./changes/PLP/include-vat-PLP";
+  }
+
+  .product-detail {
+    @import "./changes/PDP/include-vat-price/include-vat-PDP";
+    @import "./changes/PDP/include-vat-price/include-vat-PDP-overlay";
+    @import "./changes/PDP/shipping-button/shipping-button-header";
+  }
+
+  page > .checkout-container {
+    @import "./changes/Basket/include-vat-basket";
+  }
+
+  page > section.jobs__detail,
+  page > section.jobs__listing {
+    @import "./changes/My-jobs/include-vat-jobs-detail";
+  }
+
+  product-list-carousel {
+    @import "./changes/Homepage/include-vat-thumbnails";
+  }
+
+  .checkout-container.checkout-details-container {
+    @import "./changes/Checkout-details/include-vat-checkout-details";
+  }
+}

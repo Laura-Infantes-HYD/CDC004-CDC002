@@ -1,0 +1,36 @@
+//The modal already contained a hidden div where VAT inclusive
+//was the primary price, we are showing it and hidding the currently
+//displayed. This allows for the "inc VAT" to be added via CSS
+//avoiding the use of js on the overlay.
+
+
+#addedProductModal {
+
+    .product__detail--price.ng-hide {
+        display: block !important;
+    }
+
+    .product__detail--gross-price {
+        display: block;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .product__detail--net-price {
+        font-size: 2rem;
+        display: block;
+        font-weight: 700;
+    }
+
+    .product__detail--net-price::after {
+        content: "inc. VAT";
+        display: block;
+        font-size: 1rem;
+    }
+
+    .product__detail--price {
+        display: none;
+    }
+
+}
+

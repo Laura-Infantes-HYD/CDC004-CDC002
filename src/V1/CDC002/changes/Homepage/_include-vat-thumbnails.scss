@@ -1,0 +1,30 @@
+.offset-symbol {
+    display: flex;
+    flex-direction: column;
+}
+
+.price.primary {
+    order: 1;
+}
+
+.price.primary .amount {
+    font-size: 1rem !important
+}
+
+.price.primary .amount::after {
+    content: " exc. VAT";
+    text-transform: none
+}
+
+.price.secondary span{
+    display: block;
+    font-weight: 700
+}
+
+.price.secondary .amount{
+    font-size: 2rem 
+}
+
+.price.secondary {
+    margin-bottom: 0.245rem;
+}

@@ -1,0 +1,21 @@
+.HYD-gross-price-checkout {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.HYD-gross-price-checkout span{
+    //display: block;
+    font-weight: 700;
+    font-size: .75rem;
+}
+
+.HYD-gross-sibling-checkout-added {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.HYD-gross-sibling-checkout-added::after{
+    content: " exc VAT";
+}

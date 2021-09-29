@@ -1,0 +1,53 @@
+.p-info.text-block {
+    padding-bottom: 1rem;
+}
+
+.p-info {
+    margin: 0.7rem 0 1.25em;
+}
+
+.offset-symbol {
+    display: flex;
+    flex-direction: column;
+}
+
+.price.primary {
+    order: 1;
+}
+
+.price.secondary {
+    margin-bottom: 0.245rem;
+}
+
+.p-info.price-block section.price .price.primary .amount,
+.p-info.price-block section.price .price.primary .text {
+    font-size: 1rem;
+    font-weight: 300;
+    display: inline;
+    text-transform: lowercase;
+}
+
+.p-info.price-block section.price .price.secondary .text,
+.p-info.price-block section.price .price.secondary .amount .text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.price.secondary .amount {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price.secondary .text {
+    display: block;
+}
+
+.price.primary .amount::after {
+    content: " ex. VAT";
+    text-transform: none;
+}
+
+.product__detail--gross-price.ng-binding {
+    display: none;
+}

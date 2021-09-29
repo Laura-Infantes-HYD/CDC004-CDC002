@@ -1,0 +1,27 @@
+.product__detail--price{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__detail--gross-price {
+    order: -1;
+    font-weight: 700;
+    font-size: 3.75rem;
+    margin: 1rem 0 0 0;
+}
+
+.product__detail--gross-price span {
+    display: block;
+    font-size: 1.25rem
+}
+
+.product__detail--net-price {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 0.25rem 0 0 0;
+}
+
+//Original hidden price
+.product__detail--gross-price:not(.HYD-gross-price) {
+    display: none;
+}

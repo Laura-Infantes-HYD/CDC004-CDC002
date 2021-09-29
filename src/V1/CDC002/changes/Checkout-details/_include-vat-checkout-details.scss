@@ -1,0 +1,64 @@
+
+
+.delivery-orders div.flex-row.ng-scope,
+.click-collect-orders div.flex-row.ng-scope {
+    display: flex;
+    flex-direction: column;
+    text-align: end
+}
+
+
+.delivery-orders div.flex-row.ng-scope .HYD-gross-price-co-detail,
+.click-collect-orders div.flex-row.ng-scope .HYD-gross-price-co-detail {
+    font-size: 1.15rem;
+    font-weight: 700
+}
+
+.delivery-orders div.flex-row.ng-scope .HYD-gross-price-co-detail::after,
+.click-collect-orders div.flex-row.ng-scope .HYD-gross-price-co-detail::after {
+    content: "inc. VAT";
+    display: block;
+    font-size: .9rem;
+}
+
+
+.delivery-orders div.flex-row.ng-scope div:not(.HYD-gross-price-co-detail),
+.click-collect-orders div.flex-row.ng-scope div:not(.HYD-gross-price-co-detail) {
+    font-size: 1rem;
+    font-weight: 300
+}
+
+.delivery-orders div.flex-row.ng-scope div:not(.HYD-gross-price-co-detail)::after,
+.click-collect-orders div.flex-row.ng-scope div:not(.HYD-gross-price-co-detail)::after {
+    content: " exc. VAT"
+}
+
+//totals
+.click-collect-orders .order-details-row .vcenter, 
+.delivery-orders .order-details-row .vcenter {
+    text-align: end
+}
+
+.click-collect-orders .order-details-row .vcenter span, 
+.delivery-orders .order-details-row .vcenter span {
+    font-weight: 700;
+    
+}
+
+.click-collect-orders .order-details-row .vcenter span .HYD-gross-price-co-detail, 
+.delivery-orders .order-details-row .vcenter span .HYD-gross-price-co-detail {
+    text-align: end;
+    font-size: 1.5rem
+    
+}
+
+.click-collect-orders .order-details-row .vcenter span strong, 
+.delivery-orders .order-details-row .vcenter span strong {
+    font-weight: 300;
+    
+}
+
+.click-collect-orders .order-details-row .vcenter span strong::after, 
+.delivery-orders .order-details-row .vcenter span strong::after {
+    content: " exc. VAT";
+}

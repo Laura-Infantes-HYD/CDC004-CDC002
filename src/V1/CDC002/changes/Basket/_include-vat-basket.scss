@@ -1,0 +1,68 @@
+//items inherited position
+.stock-panel .details-panel .title-qty .qty {
+    align-items: end
+}
+
+.stock-panel .details-panel .qty>div {
+    align-items: flex-end
+}
+
+//Items
+.HYD-price-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.HYD-gross-price-item {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+.HYD-gross-price-item span{
+    display: block;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center
+}
+
+@media (min-width: 1024px) {
+    .HYD-gross-price-item span{
+        justify-content: flex-end
+    }
+}
+
+.HYD-price-wrap h2{
+    font-size: 1rem;
+    font-weight: 300
+}
+
+.HYD-price-wrap h2::after {
+    content: " exc. VAT";
+    white-space: nowrap;
+}
+
+//Totals
+.HYD-gross-price-total {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.total.hidden-sm-down h5 + span {
+    display: none
+}
+
+.total.hidden-sm-down h5::after{
+    content: "(inc. VAT)"
+}
+
+.HYD-gross-price-total + h2::after {
+    content: " exc. VAT"
+}
+
+.HYD-gross-price-total + h2 {
+    font-size: 1.1rem;
+    font-weight:300
+    
+}
